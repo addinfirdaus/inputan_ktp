@@ -49,6 +49,7 @@
                 />
 
             <ImageView
+                android:id="@+id/iv_foto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ic_launcher_foreground"
@@ -423,7 +424,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="64dp"
                 android:id="@+id/btpost"
-                android:backgroundTint="@android:color/darker_gray"
+                android:backgroundTint="@color/colorPrimary"
                 android:text="Kirim"
                 />
 

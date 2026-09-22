@@ -2,6 +2,7 @@ package com.test.inputanktp;
 
 public class DataModal {
 
+    private String id;
     private String nik;
     private String nama;
     private String alamat;
@@ -12,7 +13,9 @@ public class DataModal {
     private String pekerjaan;
     private String satatus;
     private String masa_berlaku;
-    public DataModal(String nik, String nama,String alamat,String til,String jenis_kelamin,String agama,String negara,String pekerjaan,String satatus,String masa_berlaku) {
+    private String gambar;
+    public DataModal(String id,String nik, String nama,String alamat,String til,String jenis_kelamin,String agama,String negara,String pekerjaan,String satatus,String masa_berlaku,String gambar) {
+        this.id = id;
         this.nik = nik;
         this.nama = nama;
         this.alamat = alamat;
@@ -23,6 +26,15 @@ public class DataModal {
         this.pekerjaan = pekerjaan;
         this.satatus = satatus;
         this.masa_berlaku = masa_berlaku;
+        this.gambar = gambar;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getNik() {
@@ -103,5 +115,13 @@ public class DataModal {
 
     public void setMasa_berlaku(String masa_berlaku) {
         this.masa_berlaku = masa_berlaku;
+    }
+
+    public String getGambar() {
+        return gambar;
+    }
+
+    public void setGambar(String gambar) {
+        this.gambar = gambar;
     }
 }

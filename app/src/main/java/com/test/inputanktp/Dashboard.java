@@ -23,11 +23,17 @@ public class Dashboard extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Dashboard.this, Transaction.class);
                 startActivity(intent);
-
             }
         });
 
         report = findViewById(R.id.card_report);;
+        report.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Dashboard.this, Report.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
